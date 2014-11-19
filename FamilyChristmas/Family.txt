@@ -1,14 +1,14 @@
 ﻿# Put each family on its own line, separated by commas.
 
-# DC Morans
+# DC
 Dennis,Kathleen,Paula,Ryan,Erin,Steve
 
-# California Morans
+# California
 Mark,Cheryl,Bob,Pat,Laura,Brent
 
-# Washington Morans
+# Washington
 John,Dagmar,Peter,Coleen
 
-# Lone Morans
+# Free agents
 Amy
 Tim
