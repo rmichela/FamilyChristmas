@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyChristmas", "FamilyChristmas\FamilyChristmas.csproj", "{F90C6449-3932-40AF-915E-ECE1AD133FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F90C6449-3932-40AF-915E-ECE1AD133FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90C6449-3932-40AF-915E-ECE1AD133FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90C6449-3932-40AF-915E-ECE1AD133FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90C6449-3932-40AF-915E-ECE1AD133FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

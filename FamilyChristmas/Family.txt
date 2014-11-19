@@ -1,0 +1,14 @@
+﻿# Put each family on its own line, separated by commas.
+
+# DC Morans
+Dennis,Kathleen,Paula,Ryan,Erin,Steve
+
+# California Morans
+Mark,Cheryl,Bob,Pat,Laura,Brent
+
+# Washington Morans
+John,Dagmar,Peter,Coleen
+
+# Lone Morans
+Amy
+Tim
