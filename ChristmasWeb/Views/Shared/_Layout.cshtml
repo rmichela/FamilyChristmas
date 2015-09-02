@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
 </head>
 <body>
     <div class="container body-content">
         <div class="jumbotron">
-            <h1>Moran Family Christmas, @DateTime.UtcNow.Year</h1>
+            <h1>Family Christmas, @DateTime.UtcNow.Year</h1>
             <p class="lead">The eternal Christmas gift exchange list.</p>
         </div>
         @RenderBody()
