@@ -3,14 +3,12 @@
 }
 
 <div class="row text-center">
-    <div>
-        @using (Html.BeginForm("Match", "Home", FormMethod.Post, new { @class = "form-inline" }))
-        {
-            <div class="form-group">
-                <h2>What is Grandma's first name?</h2>
-                <input type="text" class="form-control input-lg" id="grandma" name="grandma" />
-                <input type="submit" class="form-control input-lg btn btn-primary" value="Begin" />
-            </div>
-        }
-            
+    @using (Html.BeginForm("Match", "Home", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        <div class="form-group">
+            <h2>What is Grandma's first name?</h2>
+            <input type="text" class="form-control input-lg" id="grandma" name="grandma" />
+            <input type="submit" class="form-control input-lg btn btn-primary" value="Begin" />
+        </div>
+    }            
 </div>
