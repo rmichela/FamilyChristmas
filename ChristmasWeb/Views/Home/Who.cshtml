@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Who are you?";
+}
+
+<div class="text-center">
+    @using (Html.BeginForm("Match", "Home", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        <h2>Who are you?</h2><br />
+        @Html.DropDownList("id", (IEnumerable<SelectListItem>)ViewBag.Who, new { @class = "form-control input-lg" });
+        <input type="hidden" name="grandma" value="@ViewBag.Grandma" />
+        <input type="submit" class="form-control input-lg btn btn-primary" value="Match" />
+    }
+</div>
+

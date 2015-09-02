@@ -1,0 +1,14 @@
+﻿# Put each family on its own line, separated by commas.
+
+# DC
+Dennis,Kathleen,Paula,Ryan,Erin,Steve
+
+# California
+Mark,Cheryl,Bob,Pat,Laura,Brent
+
+# Washington
+John,Dagmar,Peter,Coleen
+
+# Free agents
+Amy
+Tim
