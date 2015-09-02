@@ -9,8 +9,17 @@ namespace FamilyChristmas
     {
         static void Main(string[] args)
         {
-            List<FamilyMember> family = ReadFamily().Shuffle();
-            while (Resequence(family)) {}
+            var rngLy = new Random();
+            List<FamilyMember> familyLy = ReadFamily().Shuffle(rngLy);
+            while (Resequence(familyLy)) {}
+
+            var rng = new Random();
+            List<FamilyMember> family = ReadFamily().Shuffle(rng);
+            int i = 0;
+            while (Resequence(family, familyLy) && ++i < 100) {}
+
+            PrintMatches(familyLy);
+            Console.WriteLine("======= {0} =======", i);
             PrintMatches(family);
         }
 
@@ -34,14 +43,14 @@ namespace FamilyChristmas
             return family;
         }
 
-        private static bool Resequence(List<FamilyMember> family)
+        private static bool Resequence(List<FamilyMember> family, List<FamilyMember> familyLy = null)
         {
             var next = Next(family.Count);
             bool changed = false;
 
             for (int i = 0; i < family.Count; i++)
             {
-                if (family[i].Family == family[next(i)].Family)
+                if (family[i].Family == family[next(i)].Family || (familyLy != null && family[next(i)].Name == familyLy[next(i)].Name))
                 {
                     family.Swap(next(i), next(next(i)));
                     changed = true;
@@ -66,9 +75,8 @@ namespace FamilyChristmas
             return (current) => (current + 1)%size;
         }
 
-        private static List<T> Shuffle<T>(this List<T> list)
+        private static List<T> Shuffle<T>(this List<T> list, Random rng)
         {
-            var rng = new Random();
             int n = list.Count;
             while (n > 1)
             {
