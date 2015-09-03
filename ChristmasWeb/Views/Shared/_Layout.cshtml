@@ -7,16 +7,15 @@
     @Styles.Render("~/Content/css")
 </head>
 <body>
+    <br /><br />
     <div class="container body-content">
-        <div class="jumbotron">
-            <h1>Family Christmas, @DateTime.UtcNow.Year</h1>
-            <p class="lead">The eternal Christmas gift exchange list.</p>
+        <div class="jumbotron seethrough">
+            <img src="~/Content/lights.gif" style="width: 100%"/>
+            <br/>
+            @RenderBody()
+            <br/>
+            <img src="~/Content/lights.gif" style="width: 100%; transform: rotate(180deg);" />
         </div>
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Ryan Michela</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

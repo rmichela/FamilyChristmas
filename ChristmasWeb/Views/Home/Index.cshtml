@@ -1,8 +1,11 @@
 ﻿@{
-    ViewBag.Title = "Moran Family Christmas";
+    ViewBag.Title = "Family Christmas";
 }
 
 <div class="row text-center">
+    <h1>Family Christmas, @DateTime.UtcNow.Year</h1>
+    <p class="lead">The eternal Christmas gift exchange list.</p>
+
     @using (Html.BeginForm("Match", "Home", FormMethod.Post, new { @class = "form-inline" }))
     {
         <div class="form-group">
