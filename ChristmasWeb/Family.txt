@@ -7,7 +7,7 @@ Dennis,Kathleen,Paula,Ryan,Erin,Steve
 Mark,Cheryl,Bob,Pat,Laura,Brent
 
 # Washington
-John,Dagmar,Peter,Colleen
+John,Dagmar,Peter,Colleen,Ben
 
 # Free agents
 Amy
